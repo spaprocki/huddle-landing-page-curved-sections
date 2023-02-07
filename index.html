@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <img src="./images/logo.svg" alt="Huddle logo" />
+        <button class="btn btn--secondary">Try it free</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__textbox textbox--primary">
+          <h1 class="heading--primary">
+            Build The Community Your Fans Will Love
+          </h1>
+          <p class="paragraph--primary">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+        </div>
+        <button class="hero__btn btn btn--primary">Get Started For Free</button>
+        <img
+          src="./images/screen-mockups.svg"
+          alt="Desktop and mobile screen mockups"
+          class="hero__image image--hero"
+        />
+        <ul class="hero__stats stats">
+          <li class="stats__item">
+            <img
+              src="./images/icon-communities.svg"
+              alt=""
+              aria-hidden="true"
+              class="stats__icon"
+            />
+            <div class="stats__textbox textbox--secondary">
+              <h2 class="heading--secondary">Communities Formed</h2>
+              <p class="paragraph--secondary">1.4k+</p>
+            </div>
+          </li>
+          <li class="stats__item">
+            <img
+              src="./images/icon-messages.svg"
+              alt=""
+              aria-hidden="true"
+              class="stats__icon"
+            />
+            <div class="stats__textbox textbox--secondary">
+              <h2 class="heading--secondary">Messages Sent</h2>
+              <p class="paragraph--secondary">2.7m+</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="stories">
+        <ul class="stories__list">
+          <li class="story">
+            <img
+              src="./images/illustration-grow-together.svg"
+              alt=""
+              class="story__img img img--story"
+            />
+            <div class="textbox textbox--tertiary">
+              <h3 class="heading heading-tertiary">Grow Together</h3>
+              <p class="paragraph paragraph--tertiary">
+                Generate meaningful discussions with your audience and build a
+                strong, loyal community. Think of the insightful conversations
+                you miss out on with a feedback form.
+              </p>
+            </div>
+          </li>
+          <li class="story">
+            <img
+              src="./images/illustration-flowing-conversation.svg"
+              alt=""
+              class="story__img img img--story"
+            />
+            <div class="textbox textbox--tertiary">
+              <h3 class="heading heading-tertiary">Flowing Conversations</h3>
+              <p class="paragraph paragraph--tertiary">
+                You wouldn't paginate a conversation in real life, so why do it
+                online? Our threads have just-in-time loading for a more natural
+                flow.
+              </p>
+            </div>
+          </li>
+          <li class="story">
+            <img
+              src="./images/illustration-your-users.svg"
+              alt=""
+              class="story__img img img--story"
+            />
+            <div class="textbox textbox--tertiary">
+              <h3 class="heading heading-tertiary">Your Users</h3>
+              <p class="paragraph paragraph--tertiary">
+                It takes no time at all to integrate Huddle with your app's
+                authentication solution. This means, once signed in to your app,
+                your users can start chatting immediately.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cta">
+        <h3 class="heading--tertiary">Ready To Build Your Community?</h3>
+        <button class="cta__btn btn btn--primary">Get Started For Free</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <address class="attribution">
+          <img
+            src="./images/logo.svg"
+            alt="Huddle logo"
+            class="attribution__image image--attribution"
+          />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
+          quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+          <a href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a>
+          <a href="mailto:equalizer@example.com">example@huddle.com</a>
+        </address>
+        <form action="" class="form">
+          <div class="textbox--tertiary">
+            <h1 class="heading--tertiary">Newsletter</h1>
+            <p class="paragraph--tertiary">
+              To recieve tips on how to grow your community, sign up to our
+              weekly newsletter. We’ll never send you spam or pass on your email
+              address
+            </p>
+          </div>
+          <input
+            class="email-input"
+            type="email"
+            id="email-input"
+            name="email"
+            aria-label="Enter email address"
+            autocomplete="off"
+          />
+          <p id="error-message" class="error-message visible">
+            Check your email please
+          </p>
+          <input
+            id="submit-button"
+            class="btn btn--submit"
+            type="submit"
+            value="Subscribe"
+          />
+        </form>
+        <ul class="footer__social-media-panel social-media-panel">
+          <li>
+            <a href="" class="link">
+              <img src="./assets/icon-facebook.svg" alt="Facebook icon" />
+              <span class="u-sr-only">Go to Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="link">
+              <img src="./assets/icon-twitter.svg" alt="Twitter icon" />
+              <span class="u-sr-only">Go to Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="link">
+              <img src="./assets/icon-instagram.svg" alt="Instagram icon" />
+              <span class="u-sr-only">Go to Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
