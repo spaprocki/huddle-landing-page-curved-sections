@@ -1,0 +1,46 @@
+  body {
+     font-family: $default-font-stack;
+     font-weight: $default-font-weight;
+     font-size: $default-font-size;
+     color: $color-very-dark-cyan;
+     text-align: center;
+  }
+
+  .heading {
+    font-weight: $default-font-weight-heading;
+    font-family: $default-font-stack-heading;
+
+    &--hero {
+      font-size: scaleSize(32px, 48px);
+      margin-bottom: scaleSize(24px, 48px);
+    }
+
+    &--stats {
+      font-size: scaleSize(64px, 96px);
+    }
+
+    &--stories {
+      font-size: 32px;
+    }
+
+    &--cta {
+
+    }
+
+    &--form {
+
+    }
+  }
+
+  .paragraph {
+    color: $color-very-pale-blue;
+
+    &--primary {
+      font-size: scaleSize(375px, 1440px, 16px, 32px);
+    }
+
+    &--secondary {
+      font-size: 16px;
+      font-weight: 600;
+    }
+}

@@ -1,0 +1,13 @@
+.logo {
+    width: scaleSize(96px, 240px, 375px, 768px);
+
+    &--footer {
+        margin: auto;
+        @include respond(medium-screen) {
+            width: auto;
+            height: 100%;
+            margin-right: auto;
+            margin-left: 0;
+        }
+    }
+}

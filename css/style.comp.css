@@ -1,0 +1,20 @@
+/* Error: $string: 375px is not a string.
+ *   ,
+ * 5 |     $length: string.length($px);
+ *   |              ^^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass\abstracts\_functions.scss 5:14   px-to-rem()
+ *   sass\abstracts\_functions.scss 13:29  scaleSize()
+ *   sass\layout\_header.scss 11:21        @import
+ *   sass\main.scss 21:9                   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: $string: 375px is not a string.\a   \2577 \a 5 \2502      $length: string.length($px);\d\a   \2502               ^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\abstracts\\_functions.scss 5:14   px-to-rem()\a   sass\\abstracts\\_functions.scss 13:29  scaleSize()\a   sass\\layout\\_header.scss 11:21        @import\a   sass\\main.scss 21:9                   root stylesheet";
+}

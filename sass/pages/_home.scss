@@ -1,0 +1,32 @@
+.main {
+    width: 100%;
+    
+    & > * {
+        width: 100%;
+        @include flex-column-align-center;
+    }
+
+.hero { 
+        padding: 0 scaleSize(23.4375rem, 768px, 36px, 72px);
+    
+        &__textbox {
+            margin-top: scaleSize(375px, 1440px, 112px, 224px);
+        }
+
+        &__btn {
+            margin-top: 3rem;
+        }
+
+        &__image {
+            margin-top: scaleSize(375px, 1440px, 96px, 120px);
+        }
+
+        &__stats {
+            margin-top: 7.5rem;
+        }
+    }
+
+    
+}
+
+
