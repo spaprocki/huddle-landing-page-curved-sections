@@ -7,7 +7,6 @@
     transition: transform 0.2s;
     font-family: inherit;
     font-weight: $default-font-weight-heading;
-    border-radius: 20px;
     cursor: pointer;
   }
 
@@ -32,6 +31,7 @@
     color: $color-white;
     padding: scaleSize(11px, 25px) scaleSize(40px, 100px);
     border: none;
+    border-radius: scaleSize(20px, 40px);
     
     &:hover {
       background: $color-light-pink;
@@ -50,6 +50,8 @@
     line-height: scaleSize(15px, 22px);
     padding: scaleSize(5px, 9px) scaleSize(18px, 30px);
     border: 1px solid $color-pink;
+    border-radius: scaleSize(12px, 20px);
+
 
     &:hover {
       border-color: $color-light-pink;

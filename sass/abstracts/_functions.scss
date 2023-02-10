@@ -39,5 +39,9 @@
     $variant-factor: math.div(100 * $a, $b);
     $constant-factor: math.div($c - $d, $e);
     
-    @return clamp(#{$size-min-rem-unitless}#{$rem}, #{$variant-factor}#{$vw} + #{$constant-factor}#{$rem}, #{$size-max-rem-unitless}#{$rem});
+    @if $size-min > $size-max {
+        @return clamp(#{$size-max-rem-unitless}#{$rem}, #{$variant-factor}#{$vw} + #{$constant-factor}#{$rem}, #{$size-min-rem-unitless}#{$rem});
+    } @else {
+        @return clamp(#{$size-min-rem-unitless}#{$rem}, #{$variant-factor}#{$vw} + #{$constant-factor}#{$rem}, #{$size-max-rem-unitless}#{$rem});
+    }
 }

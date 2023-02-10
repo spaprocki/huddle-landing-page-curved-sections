@@ -159,7 +159,6 @@ body {
   transition: transform 0.2s;
   font-family: inherit;
   font-weight: 700;
-  border-radius: 20px;
   cursor: pointer;
 }
 .btn:active {
@@ -180,6 +179,7 @@ body {
   color: #fff;
   padding: clamp(0.6875rem, 1.3145539906vw + 0.3794014085rem, 1.5625rem) clamp(2.5rem, 5.6338028169vw + 1.1795774648rem, 6.25rem);
   border: none;
+  border-radius: clamp(1.25rem, 1.8779342723vw + 0.8098591549rem, 2.5rem);
 }
 .btn--primary:hover {
   background: hsl(321deg, 100%, 78%);
@@ -195,6 +195,7 @@ body {
   line-height: clamp(0.9375rem, 0.6572769953vw + 0.7834507042rem, 1.375rem);
   padding: clamp(0.3125rem, 0.3755868545vw + 0.224471831rem, 0.5625rem) clamp(1.125rem, 1.1267605634vw + 0.860915493rem, 1.875rem);
   border: 1px solid hsl(322deg, 100%, 66%);
+  border-radius: clamp(0.75rem, 0.7511737089vw + 0.573943662rem, 1.25rem);
 }
 .btn--secondary:hover {
   border-color: hsl(321deg, 100%, 78%);
@@ -367,6 +368,7 @@ body {
 }
 .textbox--hero .paragraph {
   margin-top: clamp(1.5rem, 0.1877934272vw + 1.4559859155rem, 1.625rem);
+  max-width: 37.5rem;
 }
 .textbox--stats {
   align-items: flex-start;
