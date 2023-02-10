@@ -1,26 +1,27 @@
 .stats {
     list-style-type: none;
     @include flex-column-align-center;
-    row-gap: 2rem;
+    row-gap: 5.5rem;
     width: 100%;
+    max-width: 55rem;
 
     @include respond(medium-screen) {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    @include respond(stats) {
-        width: clamp(6.25rem, calc(13.39vw + -0.18rem), 11.875rem);
-        flex-direction: column;
-        justify-content: space-between;
-        row-gap: 3.9375rem;
+    &__item {
+        @include flex-column-align-center;
     }
 
-    &__item {
-        width: 13.9375rem;
+    &__icon {
+        align-self: flex-start;
+        width: scaleSize(36px, 56px, 375px, 768px);
+        margin-bottom: -10px;
 
         @include respond(medium-screen) {
-            width: 100%;
+            margin-bottom: -16px;
+
         }
     }
 }

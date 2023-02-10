@@ -17,9 +17,9 @@
 
     &--stats {
       font-family: $default-font-stack;
-      font-size: scaleSize(32px, 48px);
+      font-size: scaleSize(16px, 32px);
       font-weight: $default-font-weight;
-      line-height: scaleSize(36px, 72px);
+      line-height: scaleSize(24px, 48px);
       color: $color-grey;
     }
 
@@ -53,6 +53,7 @@
       font-size: scaleSize(60px, 96px);
       line-height: scaleSize(92px, 144px);
       color: $color-very-dark-cyan;
+      text-align: left;
     }
 
     &--stories {

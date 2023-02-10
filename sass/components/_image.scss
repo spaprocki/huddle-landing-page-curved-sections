@@ -1,8 +1,6 @@
 .image {
     &--hero {
-        & img {
-            width: 100%;
-        }
+            width: min(100%, 1016px)
     }
 
     &--review {

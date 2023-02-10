@@ -4,19 +4,17 @@
 
     &--hero {
         @include flex-column-align-center;
-        align-items: flex-start;
-        row-gap: 2rem;
-    
-        @include respond(medium-screen) {
-            row-gap: 2.5rem;
+        
+        & .paragraph {
+            margin-top: scaleSize(24px, 26px);
         }
     }
 
     &--stats {
-        gap: 1px;
-        @include respond(stats) {
-            align-items: flex-start;
-            text-align: left;
+        align-items: flex-start;
+        & .heading {
+            order: 2;
+            align-self: center;
         }
     }
 

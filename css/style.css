@@ -85,9 +85,9 @@ body {
 }
 .heading--stats {
   font-family: "Open Sans", sans-serif;
-  font-size: clamp(2rem, 1.5023474178vw + 1.6478873239rem, 3rem);
+  font-size: clamp(1rem, 1.5023474178vw + 0.6478873239rem, 2rem);
   font-weight: 400;
-  line-height: clamp(2.25rem, 3.3802816901vw + 1.4577464789rem, 4.5rem);
+  line-height: clamp(1.5rem, 2.2535211268vw + 0.9718309859rem, 3rem);
   color: hsl(208deg, 12%, 55%);
 }
 .heading--stories {
@@ -115,6 +115,7 @@ body {
   font-size: clamp(3.75rem, 3.3802816901vw + 2.9577464789rem, 6rem);
   line-height: clamp(5.75rem, 4.882629108vw + 4.6056338028rem, 9rem);
   color: hsl(192deg, 100%, 9%);
+  text-align: left;
 }
 .paragraph--stories {
   font-size: clamp(0.875rem, 0.1877934272vw + 0.8309859155rem, 1rem);
@@ -203,8 +204,8 @@ body {
   outline-color: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
 }
 
-.image--hero img {
-  width: 100%;
+.image--hero {
+  width: min(100%, 1016px);
 }
 .image--review img {
   z-index: 1;
@@ -327,8 +328,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2rem;
+  row-gap: 5.5rem;
   width: 100%;
+  max-width: 55rem;
 }
 @media (min-width: 48rem) {
   .stats {
@@ -336,20 +338,19 @@ body {
     justify-content: space-between;
   }
 }
-@media (min-width: 64rem) {
-  .stats {
-    width: clamp(6.25rem, 13.39vw - 0.18rem, 11.875rem);
-    flex-direction: column;
-    justify-content: space-between;
-    row-gap: 3.9375rem;
-  }
-}
 .stats__item {
-  width: 13.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stats__icon {
+  align-self: flex-start;
+  width: clamp(2.25rem, 5.0890585242vw + 1.0572519084rem, 3.5rem);
+  margin-bottom: -10px;
 }
 @media (min-width: 48rem) {
-  .stats__item {
-    width: 100%;
+  .stats__icon {
+    margin-bottom: -16px;
   }
 }
 
@@ -363,22 +364,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-items: flex-start;
-  row-gap: 2rem;
 }
-@media (min-width: 48rem) {
-  .textbox--hero {
-    row-gap: 2.5rem;
-  }
+.textbox--hero .paragraph {
+  margin-top: clamp(1.5rem, 0.1877934272vw + 1.4559859155rem, 1.625rem);
 }
 .textbox--stats {
-  gap: 1px;
+  align-items: flex-start;
 }
-@media (min-width: 64rem) {
-  .textbox--stats {
-    align-items: flex-start;
-    text-align: left;
-  }
+.textbox--stats .heading {
+  order: 2;
+  align-self: center;
 }
 .textbox--quote {
   display: flex;
@@ -505,10 +500,10 @@ body {
   margin-top: 3rem;
 }
 .main .hero__image {
-  margin-top: clamp(6rem, 2.2535211268vw + 5.4718309859rem, 7.5rem);
+  margin-top: clamp(6.5rem, 1.5023474178vw + 6.1478873239rem, 7.5rem);
 }
 .main .hero__stats {
-  margin-top: 7.5rem;
+  margin-top: 120px;
 }
 
 /*# sourceMappingURL=style.css.map */
