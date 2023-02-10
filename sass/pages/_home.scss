@@ -7,10 +7,10 @@
     }
 
 .hero { 
-        padding: 0 scaleSize(23.4375rem, 768px, 36px, 72px);
+        padding: 0 scaleSize(36px, 72px, 375px, 768px);
     
         &__textbox {
-            margin-top: scaleSize(375px, 1440px, 112px, 224px);
+            margin-top: scaleSize(112px, 225px);
         }
 
         &__btn {
@@ -18,7 +18,7 @@
         }
 
         &__image {
-            margin-top: scaleSize(375px, 1440px, 96px, 120px);
+            margin-top: scaleSize(96px, 120px);
         }
 
         &__stats {

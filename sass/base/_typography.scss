@@ -12,35 +12,58 @@
 
     &--hero {
       font-size: scaleSize(32px, 48px);
-      margin-bottom: scaleSize(24px, 48px);
+      line-height: scaleSize(36px, 72px);
     }
 
     &--stats {
-      font-size: scaleSize(64px, 96px);
+      font-family: $default-font-stack;
+      font-size: scaleSize(32px, 48px);
+      font-weight: $default-font-weight;
+      line-height: scaleSize(36px, 72px);
+      color: $color-grey;
     }
 
     &--stories {
-      font-size: 32px;
+      font-size: scaleSize(20px, 40px);
+      line-height: scaleSize(30px, 60px);
     }
 
     &--cta {
-
+      font-size: scaleSize(24px, 40px);
+      line-height: scaleSize(36px, 60px);
     }
 
     &--form {
-
+      text-transform: uppercase;
+      font-family: $default-font-stack;
+      font-size: scaleSize(20px, 24px);
+      line-height: scaleSize(30px, 36px);
+      color: $color-white;
     }
   }
 
   .paragraph {
-    color: $color-very-pale-blue;
-
-    &--primary {
-      font-size: scaleSize(375px, 1440px, 16px, 32px);
+    &--hero {
+      font-size: scaleSize(14px, 20px);
+      line-height: scaleSize(21px, 30px);
     }
 
-    &--secondary {
-      font-size: 16px;
+    &--stats {
+      font-weight: $default-font-weight-heading;
+      font-size: scaleSize(60px, 96px);
+      line-height: scaleSize(92px, 144px);
+      color: $color-very-dark-cyan;
+    }
+
+    &--stories {
+      font-size: scaleSize(14px, 16px);
+      line-height: scaleSize(21px, 24px);
+    }
+
+    &--footer {
       font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      color: $color-white;
     }
 }

@@ -7,7 +7,7 @@
     transition: transform 0.2s;
     font-family: inherit;
     font-weight: $default-font-weight-heading;
-    border-radius: 0.375rem;
+    border-radius: 20px;
     cursor: pointer;
   }
 
@@ -27,16 +27,14 @@
   
   &--primary {
     background-color: $color-pink;
-    font-size: 1.125rem;
-    line-height: 2rem;
-    letter-spacing: -0.18px;
-    color: #fff;
-    padding: 0.9375rem 2rem;
-    max-width: 16rem;
+    font-size: scaleSize(12px, 20px);
+    line-height: scaleSize(18px, 30px);
+    color: $color-white;
+    padding: scaleSize(11px, 25px) scaleSize(40px, 100px);
     border: none;
     
     &:hover {
-      background: $color-gradient;
+      background: $color-light-pink;
     }
 
     &:focus,:focus-visible {
@@ -47,15 +45,11 @@
   &--secondary {
     background: transparent;
     color: $color-pink;
-    font-size: clamp(0.875rem, calc(0.51vw + 0.76rem), 1rem);
-    line-height: clamp(1.5rem, calc(2.04vw + 1.02rem), 2rem);
-    letter-spacing: -0.14px;
-    padding: 0.75rem clamp(1rem, calc(2.04vw + 0.52rem), 1.5rem);
+    font-weight: $default-font-weight;
+    font-size: scaleSize(10px, 13px);
+    line-height: scaleSize(15px, 22px);
+    padding: scaleSize(5px, 9px) scaleSize(18px, 30px);
     border: 1px solid $color-pink;
-
-    @include respond(medium-screen) {
-      letter-spacing: -0.16px;
-    }
 
     &:hover {
       border-color: $color-light-pink;

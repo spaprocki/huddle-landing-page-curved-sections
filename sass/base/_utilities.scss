@@ -13,3 +13,17 @@
     width: 1px !important;
     white-space: nowrap !important;
   }
+
+  .u-vertical-spacing {
+    &--1x {
+      margin-bottom: 24px;
+    }
+
+    &--2x {
+      margin-bottom: 48px;
+    }
+
+    &--1x {
+      margin-bottom: 24px;
+    }
+  }
