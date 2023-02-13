@@ -22,16 +22,19 @@
     &--stories {
         margin-top: 40px;
 
-        @include respond(stats) {
+        @include respond(medium-screen) {
+        margin-top: 0px;
+
             align-items: flex-start;
+            text-align: left;
         }
 
         & .paragraph {
             margin-top: scaleSize(16px, 26px, 375px, 768px);
             max-width: 520px;
 
-            @include respond(stats) {
-                margin-top: scaleSize(16px, 26px, 375px, 768px);
+            @include respond(medium-screen) {
+                margin-top: scaleSize(16px, 26px, 768px, 1440px);
                 width: scaleSize(320px, 520px, 768px, 1440px);
             }
         }

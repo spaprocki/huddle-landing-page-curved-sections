@@ -1,18 +1,31 @@
 .story {
+    width: 100%;
     @include flex-column-align-center;
     position: relative;
+    padding-left: scaleSize(36px, 72px, 375px, 768px);
+    padding-right: scaleSize(36px, 72px, 375px, 768px);
+
+    @include respond(medium-screen) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: scaleSize(36px, 120px, 768px, 1440px);
+        padding-right: scaleSize(36px, 120px, 768px, 1440px);
+    }
 
     &--white {
-        margin-top: 51vw;
-        padding: 0 scaleSize(36px, 72px, 375px, 768px) 0 scaleSize(36px, 72px, 375px, 768px);
-
+        margin-top: min(51vw, 339px);
     }
     
 
     &--blue-1 {
-        
         background-color: $color-very-pale-blue;
-        padding: 84px scaleSize(36px, 72px, 375px, 768px) 53px scaleSize(36px, 72px, 375px, 768px);
+        padding-top: 84px;
+        padding-bottom: 53px;
+
+        @include respond(medium-screen) {
+            padding-top: 61px;
+            padding-bottom: 40px;
+        }
 
         &:before {
             content: '';
@@ -21,9 +34,16 @@
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: bottom left;
+            left: 0;
             height: 30vw;
             width: 100%;
             top: -29vw;
+
+            @include respond(medium-screen) {
+                background-image: url("/images/bg-section-top-desktop-1.svg");
+                height: 12vw;
+                top: -11vw;
+            }
         }
 
         &::after {
@@ -33,18 +53,29 @@
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: top left;
+            left: 0;
             height: 14vw;
             width: 100%;
             bottom: -13vw;
+
+            @include respond(medium-screen) {
+                background-image: url("/images/bg-section-bottom-desktop-1.svg");
+                height: 10vw;
+                bottom: -9vw;
+            }
         }
-    
     }
 
     &--blue-2 {
-        margin-top: 59vw;
-        
+        margin-top: min(59vw, 276px);
         background-color: $color-very-pale-blue;
-        padding: 16px scaleSize(36px, 72px, 375px, 768px) 113px scaleSize(36px, 72px, 375px, 768px);
+        padding-top: 16px;
+        padding-bottom: 113px;
+
+        @include respond(medium-screen) {
+            padding-top: 34px;
+            padding-bottom: 33px;
+        }
 
         &:before {
             content: '';
@@ -53,9 +84,16 @@
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: bottom left;
+            left: 0;
             height: 28vw;
             width: 100%;
             top: -27vw;
+
+            @include respond(medium-screen) {
+                background-image: url("/images/bg-section-top-desktop-2.svg");
+                height: 11vw;
+                top: -10vw;
+            }
         }
 
         &::after {
@@ -65,10 +103,17 @@
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: top left;
+            left: 0;
             height: 27vw;
             width: 100%;
             bottom: -26vw;
+
+            @include respond(medium-screen) {
+                background-image: url("/images/bg-section-bottom-desktop-2.svg");
+                height: 10vw;
+                width: 100%;
+                bottom: -9vw;
+            }
         }
-    
     }
 }

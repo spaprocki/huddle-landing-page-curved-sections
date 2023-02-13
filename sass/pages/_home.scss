@@ -30,8 +30,21 @@
         }
     }   
 
-    .stories {
-        margin-top: 35vw;
+.stories {
+    margin-top: min(35vw, 305px);
+
+        &__list {
+            width: 100%;
+            max-width: 1440px;
+        }
+    }
+
+.cta {
+        margin-top: 45vw;
+
+        &__btn {
+            margin-top: scaleSize(40px, 42px);
+        }
     }
 
 
