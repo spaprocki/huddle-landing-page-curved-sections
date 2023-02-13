@@ -3,7 +3,7 @@
     position: relative;
 
     &--white {
-        margin-top: 193px;
+        margin-top: 51vw;
         padding: 0 scaleSize(36px, 72px, 375px, 768px) 0 scaleSize(36px, 72px, 375px, 768px);
 
     }
@@ -41,7 +41,7 @@
     }
 
     &--blue-2 {
-        margin-top: 223px;
+        margin-top: 59vw;
         
         background-color: $color-very-pale-blue;
         padding: 16px scaleSize(36px, 72px, 375px, 768px) 113px scaleSize(36px, 72px, 375px, 768px);
