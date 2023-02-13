@@ -1,5 +1,5 @@
 .footer {
-    margin-top: clamp(-464px, calc(-94.91vw + 16.56rem), -91px);
+    // margin-top: clamp(-464px, calc(-94.91vw + 16.56rem), -91px);
     width: 100%;
     padding:    clamp(190px, calc(88.04vw + -8.76rem), 536px)
                 clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem)
@@ -10,7 +10,7 @@
     @include flex-column-align-center;
 
     @include respond(medium-screen) {
-        margin-top: clamp(-464px, calc(29.61vw + -43.21rem), -265px);
+        // margin-top: clamp(-464px, calc(29.61vw + -43.21rem), -265px);
         max-width: 90rem;
         padding:    clamp(360px, calc(-26.19vw + 46.07rem), 536px)
                     clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem)

@@ -1,0 +1,74 @@
+.story {
+    @include flex-column-align-center;
+    position: relative;
+
+    &--white {
+        margin-top: 193px;
+        padding: 0 scaleSize(36px, 72px, 375px, 768px) 0 scaleSize(36px, 72px, 375px, 768px);
+
+    }
+    
+
+    &--blue-1 {
+        
+        background-color: $color-very-pale-blue;
+        padding: 84px scaleSize(36px, 72px, 375px, 768px) 53px scaleSize(36px, 72px, 375px, 768px);
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url("/images/bg-section-top-mobile-1.svg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            height: 30vw;
+            width: 100%;
+            top: -29vw;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url("/images/bg-section-bottom-mobile-1.svg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top left;
+            height: 14vw;
+            width: 100%;
+            bottom: -13vw;
+        }
+    
+    }
+
+    &--blue-2 {
+        margin-top: 223px;
+        
+        background-color: $color-very-pale-blue;
+        padding: 16px scaleSize(36px, 72px, 375px, 768px) 113px scaleSize(36px, 72px, 375px, 768px);
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url("/images/bg-section-top-mobile-2.svg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            height: 28vw;
+            width: 100%;
+            top: -27vw;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url("/images/bg-section-bottom-mobile-2.svg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top left;
+            height: 27vw;
+            width: 100%;
+            bottom: -26vw;
+        }
+    
+    }
+}

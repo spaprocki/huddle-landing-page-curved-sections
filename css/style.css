@@ -336,7 +336,8 @@ body {
 @media (min-width: 48rem) {
   .stats {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: clamp(5.5rem, 37.5vw + -12.5rem, 21.25rem);
   }
 }
 .stats__item {
@@ -353,6 +354,70 @@ body {
   .stats__icon {
     margin-bottom: -16px;
   }
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.story--white {
+  margin-top: 193px;
+  padding: 0 clamp(2.25rem, 9.1603053435vw + 0.1030534351rem, 4.5rem) 0 clamp(2.25rem, 9.1603053435vw + 0.1030534351rem, 4.5rem);
+}
+.story--blue-1 {
+  background-color: hsl(207deg, 100%, 98%);
+  padding: 84px clamp(2.25rem, 9.1603053435vw + 0.1030534351rem, 4.5rem) 53px clamp(2.25rem, 9.1603053435vw + 0.1030534351rem, 4.5rem);
+}
+.story--blue-1:before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/bg-section-top-mobile-1.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 30vw;
+  width: 100%;
+  top: -29vw;
+}
+.story--blue-1::after {
+  content: "";
+  position: absolute;
+  background-image: url("/images/bg-section-bottom-mobile-1.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 14vw;
+  width: 100%;
+  bottom: -13vw;
+}
+.story--blue-2 {
+  margin-top: 223px;
+  background-color: hsl(207deg, 100%, 98%);
+  padding: 16px clamp(2.25rem, 9.1603053435vw + 0.1030534351rem, 4.5rem) 113px clamp(2.25rem, 9.1603053435vw + 0.1030534351rem, 4.5rem);
+}
+.story--blue-2:before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/bg-section-top-mobile-2.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 28vw;
+  width: 100%;
+  top: -27vw;
+}
+.story--blue-2::after {
+  content: "";
+  position: absolute;
+  background-image: url("/images/bg-section-bottom-mobile-2.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 27vw;
+  width: 100%;
+  bottom: -26vw;
 }
 
 .textbox {
@@ -377,37 +442,22 @@ body {
   order: 2;
   align-self: center;
 }
-.textbox--quote {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 1rem;
-  gap: 2.5rem;
-  max-width: 35.8125rem;
+.textbox--stories {
+  margin-top: 40px;
 }
 @media (min-width: 64rem) {
-  .textbox--quote {
+  .textbox--stories {
     align-items: flex-start;
-    text-align: left;
-    padding: 0;
-    max-width: 21.875rem;
   }
 }
-.textbox--quote-author {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.textbox--stories .paragraph {
+  margin-top: clamp(1rem, 2.5445292621vw + 0.4036259542rem, 1.625rem);
+  max-width: 520px;
 }
 @media (min-width: 64rem) {
-  .textbox--quote-author {
-    align-items: flex-start;
-    text-align: left;
-  }
-}
-@media (min-width: 90rem) {
-  .textbox--quote-author {
-    align-items: flex-start;
-    text-align: left;
+  .textbox--stories .paragraph {
+    margin-top: clamp(1rem, 2.5445292621vw + 0.4036259542rem, 1.625rem);
+    width: clamp(20rem, 29.7619047619vw + 5.7142857143rem, 32.5rem);
   }
 }
 
@@ -426,7 +476,6 @@ body {
 }
 
 .footer {
-  margin-top: clamp(-464px, -94.91vw + 16.56rem, -91px);
   width: 100%;
   padding: clamp(190px, 88.04vw - 8.76rem, 536px) clamp(1rem, 6.11vw - 0.43rem, 2.5rem) clamp(5rem, -2.04vw + 5.48rem, 4.5rem) clamp(1rem, 6.11vw - 0.43rem, 2.5rem);
   background-color: hsl(192deg, 100%, 9%);
@@ -437,7 +486,6 @@ body {
 }
 @media (min-width: 48rem) {
   .footer {
-    margin-top: clamp(-464px, 29.61vw - 43.21rem, -265px);
     max-width: 90rem;
     padding: clamp(360px, -26.19vw + 46.07rem, 536px) clamp(1rem, 6.11vw - 0.43rem, 2.5rem) 4.5rem clamp(1rem, 6.11vw - 0.43rem, 2.5rem);
   }
@@ -485,6 +533,7 @@ body {
 
 .main {
   width: 100%;
+  z-index: 1;
 }
 .main > * {
   width: 100%;
@@ -492,20 +541,25 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.main .hero {
+
+.hero {
   padding: 0 clamp(2.25rem, 9.1603053435vw + 0.1030534351rem, 4.5rem);
 }
-.main .hero__textbox {
+.hero__textbox {
   margin-top: clamp(7rem, 10.6103286385vw + 4.5132042254rem, 14.0625rem);
 }
-.main .hero__btn {
+.hero__btn {
   margin-top: 3rem;
 }
-.main .hero__image {
+.hero__image {
   margin-top: clamp(6.5rem, 1.5023474178vw + 6.1478873239rem, 7.5rem);
 }
-.main .hero__stats {
+.hero__stats {
   margin-top: 120px;
+}
+
+.stories {
+  margin-top: 35vw;
 }
 
 /*# sourceMappingURL=style.css.map */
