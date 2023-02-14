@@ -42,10 +42,10 @@
     &--form {
         align-items: flex-start;
         text-align: left;
+        max-width: 344px;
 
         & .paragraph {
             margin-top: 16px;
-            max-width: 344px;
         }
     }
 }

@@ -29,14 +29,16 @@
     }
 
     &__inner {
-        width: min(100%, 1200px);
+        width: min(100%, 344px);
         @include flex-column-align-center;
         align-items: flex-start;
 
         @include respond(medium-screen) {
+            width: min(100%, 1200px);
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
+            flex-wrap: wrap;
           }
     }
 

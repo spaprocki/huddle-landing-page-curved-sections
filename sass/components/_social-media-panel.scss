@@ -9,4 +9,12 @@
     @include respond(medium-screen) {
         margin-right: 0;
       }
+
+      &__link {
+        display: block;
+
+        & img {
+          width: scaleSize(1.4375rem, 2rem);
+        }
+      }
 }

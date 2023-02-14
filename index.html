@@ -145,14 +145,28 @@
           <img
             src="./images/logo_white.svg"
             alt="Huddle logo"
-            class="attribution__image image--attribution"
+            class="attribution__image logo--footer"
           />
-          <p class="paragraph paragraph--footer">
+          <p class="attribution__paragraph paragraph paragraph--footer">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
           </p>
-          <a href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a>
-          <a href="mailto:equalizer@example.com">example@huddle.com</a>
+          <div class="attribution__contact-details">
+            <a
+              href="tel:+1-543-123-4567"
+              class="link attribution__contact-detail attribution__contact-detail--phone"
+            >
+              <img src="/images/icon-phone.svg" alt="" />
+              <p>Phone: +1-543-123-4567</p>
+            </a>
+            <a
+              href="mailto:equalizer@example.com"
+              class="link attribution__contact-detail attribution__contact-detail--email"
+            >
+              <img src="/images/icon-email.svg" alt="" />
+              <p>example@huddle.com</p>
+            </a>
+          </div>
         </address>
         <form action="" class="footer__form form">
           <div class="form__textbox textbox textbox--form">
@@ -190,19 +204,19 @@
         </form>
         <ul class="footer__social-media-panel social-media-panel">
           <li>
-            <a href="" class="link">
+            <a href="" class="social-media-panel__link link link--icon">
               <img src="./images/icon-facebook.svg" alt="Facebook icon" />
               <span class="u-sr-only">Go to Facebook</span>
             </a>
           </li>
           <li>
-            <a href="" class="link">
+            <a href="" class="social-media-panel__link link link--icon">
               <img src="./images/icon-twitter.svg" alt="Twitter icon" />
               <span class="u-sr-only">Go to Twitter</span>
             </a>
           </li>
           <li>
-            <a href="" class="link">
+            <a href="" class="social-media-panel__link link link--icon">
               <img src="./images/icon-instagram.svg" alt="Instagram icon" />
               <span class="u-sr-only">Go to Instagram</span>
             </a>

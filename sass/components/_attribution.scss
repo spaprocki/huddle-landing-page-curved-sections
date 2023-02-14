@@ -1,4 +1,36 @@
 .attribution {
     @include flex-column-align-center;
     align-items: flex-start;
+    text-align: left;
+    max-width: 344px;
+
+
+    &__paragraph {
+        margin-top: 16px;
+    }
+
+    &__contact-details {
+        margin-top: scaleSize(40px, 24px);
+    }
+
+    &__contact-detail {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        display: flex;
+
+        & img {
+            margin: auto 19px auto 0;
+            width: 18px;
+            height: 18px;
+        }
+
+        &--email {
+            margin-top: 16px;
+
+            & img {
+                width: 20px;
+                height: 16px;
+            }
+        }
+    }
 }
