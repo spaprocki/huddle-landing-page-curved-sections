@@ -4,6 +4,10 @@
     text-align: left;
     max-width: 344px;
 
+    @include respond(medium-screen) {
+        flex: 1;
+    }
+
 
     &__paragraph {
         margin-top: 16px;

@@ -10,11 +10,15 @@
         margin-right: 0;
       }
 
-      &__link {
-        display: block;
+    &__link {
+      display: block;
 
-        & img {
+      & img {
           width: scaleSize(1.4375rem, 2rem);
-        }
       }
+    }
+
+    &__container {
+      width: 100%;
+    }
 }
