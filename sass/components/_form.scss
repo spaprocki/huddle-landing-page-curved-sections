@@ -1,0 +1,24 @@
+.form {
+    @include flex-column-align-center;
+    align-items: flex-start;
+    
+    &__form-control {
+        width: 100%;
+        @include flex-column-align-center;
+        margin-top: scaleSize(32px, 40px);
+        position: relative;
+
+        @include respond(medium-screen) {
+            
+        }
+    }
+
+    &__input {
+        
+    }
+
+    &__button {
+        margin-top: 16px;
+        align-self: flex-end;
+    }
+}

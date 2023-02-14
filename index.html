@@ -21,6 +21,8 @@
 
     <link rel="stylesheet" href="./css/style.css" />
 
+    <script src="./scripts/email_validation.js" defer></script>
+
     <title>Frontend Mentor | Huddle landing page with curved sections</title>
   </head>
   <body>
@@ -139,7 +141,7 @@
 
     <footer class="footer">
       <div class="footer__inner">
-        <address class="attribution">
+        <address class="footer__attribution attribution">
           <img
             src="./images/logo_white.svg"
             alt="Huddle logo"
@@ -152,32 +154,39 @@
           <a href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a>
           <a href="mailto:equalizer@example.com">example@huddle.com</a>
         </address>
-        <form action="" class="form">
-          <div class="textbox--form">
-            <h1 class="heading--form">Newsletter</h1>
-            <p class="paragraph--footer">
+        <form action="" class="footer__form form">
+          <div class="form__textbox textbox textbox--form">
+            <h1 class="heading heading--form">Newsletter</h1>
+            <p class="paragraph paragraph--footer">
               To recieve tips on how to grow your community, sign up to our
               weekly newsletter. We’ll never send you spam or pass on your email
               address
             </p>
           </div>
-          <input
-            class="email-input"
-            type="email"
-            id="email-input"
-            name="email"
-            aria-label="Enter email address"
-            autocomplete="off"
-          />
-          <p id="error-message" class="error-message visible">
-            Check your email please
-          </p>
-          <input
-            id="submit-button"
-            class="btn btn--submit"
-            type="submit"
-            value="Subscribe"
-          />
+
+          <div class="form__form-control">
+            <input
+              class="form__input input"
+              type="email"
+              id="email-address"
+              name="email"
+              aria-label="Enter email address"
+              autocomplete="off"
+            />
+            <button
+              id="submit-button"
+              class="form__button btn btn--primary btn--submit"
+              type="submit"
+            >
+              Subscribe
+            </button>
+            <p
+              id="error-message"
+              class="input__error-message paragraph paragraph--error"
+            >
+              Check your email please
+            </p>
+          </div>
         </form>
         <ul class="footer__social-media-panel social-media-panel">
           <li>

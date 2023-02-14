@@ -1,6 +1,5 @@
 .textbox {
     @include flex-column-align-center;
-    max-width: 45.625rem;
 
     &--hero {
         @include flex-column-align-center;
@@ -37,6 +36,16 @@
                 margin-top: scaleSize(16px, 26px, 768px, 1440px);
                 width: scaleSize(320px, 520px, 768px, 1440px);
             }
+        }
+    }
+
+    &--form {
+        align-items: flex-start;
+        text-align: left;
+
+        & .paragraph {
+            margin-top: 16px;
+            max-width: 344px;
         }
     }
 }

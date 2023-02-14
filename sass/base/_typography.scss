@@ -67,4 +67,11 @@
       line-height: 24px;
       color: $color-white;
     }
+
+    &--error {
+      color: $color-light-red;
+      font-size: 12px;
+      line-height: 24px;
+      text-align: left;
+    }
 }

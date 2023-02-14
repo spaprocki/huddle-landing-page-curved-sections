@@ -17,12 +17,12 @@
   &:focus,:focus-visible {
     outline-width: 3px;
     outline-style:  dashed;
-    outline-offset: 5px;
+    outline-offset: 5px;}
 
     &:focus:not(:focus-visible) {
       outline: none;
     }
-  }
+  
   
   &--primary {
     background-color: $color-pink;
@@ -38,7 +38,7 @@
     }
 
     &:focus,:focus-visible {
-      outline-color: $color-gradient;
+      outline-color: $color-pink;
     }
   }
 
@@ -59,7 +59,14 @@
     }
 
     &:focus,:focus-visible {
-      outline-color: $color-gradient;
+      outline-color: $color-light-pink;
     }
+  }
+
+  &--submit {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 41px;
+    border-radius: 5px;
   }
 }

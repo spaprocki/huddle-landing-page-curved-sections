@@ -40,7 +40,8 @@
     }
 
 .cta {
-        margin-top: 45vw;
+        margin-top: min(45vw, 308px);
+        padding: 0 scaleSize(36px, 72px, 375px, 768px);
 
         &__btn {
             margin-top: scaleSize(40px, 42px);

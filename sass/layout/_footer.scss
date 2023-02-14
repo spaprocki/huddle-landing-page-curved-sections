@@ -1,40 +1,65 @@
 .footer {
-    // margin-top: clamp(-464px, calc(-94.91vw + 16.56rem), -91px);
-    width: 100%;
-    padding:    clamp(190px, calc(88.04vw + -8.76rem), 536px)
-                clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem)
-                clamp(5rem, calc(-2.04vw + 5.48rem), 4.5rem)
-                clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem);
-    background-color: $color-very-dark-cyan;
-    z-index: 1;
     @include flex-column-align-center;
+    background-color: $color-very-dark-cyan;
+    margin-top: min(343px, 82.13vw);/* 308px/82.13vw , 343*/;
+    width: min(100%, 1440px);
+    position: relative;
+    padding:    scaleSize(52px, 115px) 
+                    scaleSize(24px, 48px, 375px, 768px)
+                    scaleSize(46px, 103px)
+                    scaleSize(24px, 48px, 375px, 768px);
 
-    @include respond(medium-screen) {
-        // margin-top: clamp(-464px, calc(29.61vw + -43.21rem), -265px);
-        max-width: 90rem;
-        padding:    clamp(360px, calc(-26.19vw + 46.07rem), 536px)
-                    clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem)
-                    4.5rem
-                    clamp(1rem, calc(6.11vw + -0.43rem), 2.5rem);
-      }
+      &:before {
+        content: '';
+        position: absolute;
+        background-image: url("/images/bg-footer-top-mobile.svg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        left: 0;
+        height: 15vw;
+        width: 100%;
+        top: -14vw;
+
+        @include respond(medium-screen) {
+            background-image: url("/images/bg-footer-top-desktop.svg");
+            height: 11vw;
+            top: -10.5vw;
+        }
+    }
 
     &__inner {
-        width: 100%;
-        max-width: 69.375rem;
+        width: min(100%, 1200px);
         @include flex-column-align-center;
-        row-gap: 2.0625rem;
+        align-items: flex-start;
 
         @include respond(medium-screen) {
             flex-direction: row;
-            align-items: baseline;
+            align-items: flex-start;
             justify-content: space-between;
           }
     }
 
-    &__flex-item {
-        text-align: center;
+    &__attribution {
+        order: 2;
+        margin-top: 104px;
+
         @include respond(medium-screen) {
-            width: 30%;
+            margin-top: 0px;
+            order: 1;
           }
+    }
+
+    &__form {
+        order: 1;
+
+        @include respond(medium-screen) {
+            order: 2;
+          }
+    }
+
+    &__social-media-panel {
+        margin-top: scaleSize(3rem, 5rem);
+        order: 3;
     }
 }
