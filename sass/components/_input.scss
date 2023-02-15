@@ -8,8 +8,12 @@
     border: none;
 
     @include respond(medium-screen) {
-        width: min(100%, 320px);
+        width: min(100%, 344px);
     }
+
+    @include respond(big-screen) {
+      width: 320px;
+  }
 
     &:focus,:focus-visible {
         outline-width: 3px;

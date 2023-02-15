@@ -3,7 +3,11 @@
     align-items: flex-start;
 
     @include respond(medium-screen) {
-        width: scaleSize(320px, 520px, 768px, 1440px);
+        width: scaleSize(320px, 344px, 768px, 1440px);
+    }
+
+    @include respond(big-screen) {
+        width: 520px;
     }
     
     &__form-control {
@@ -33,6 +37,9 @@
 
         @include respond(medium-screen) {
             margin-top: 0px;
+        }
+
+        @include respond(medium-screen) {
             align-self: flex-start;
         }
     }
