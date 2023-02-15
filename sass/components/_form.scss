@@ -39,7 +39,7 @@
             margin-top: 0px;
         }
 
-        @include respond(medium-screen) {
+        @include respond(big-screen) {
             align-self: flex-start;
         }
     }
