@@ -56,8 +56,6 @@ I've written my first SASS function. It brings together the CSS clamp() function
 
 I really need to do some refactoring, especially in the footer section.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - [A modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset/) - This is a reset stylesheet I am planning to use in my following coding projects
