@@ -17,9 +17,9 @@
 
     &--stats {
       font-family: $default-font-stack;
-      font-size: scaleSize(16px, 32px);
+      font-size: scaleSize(14px, 24px);
       font-weight: $default-font-weight;
-      line-height: scaleSize(24px, 48px);
+      line-height: scaleSize(20px, 36px);
       color: $color-grey;
     }
 

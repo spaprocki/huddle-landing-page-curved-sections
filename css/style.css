@@ -85,9 +85,9 @@ body {
 }
 .heading--stats {
   font-family: "Open Sans", sans-serif;
-  font-size: clamp(1rem, 1.5023474178vw + 0.6478873239rem, 2rem);
+  font-size: clamp(0.875rem, 0.9389671362vw + 0.6549295775rem, 1.5rem);
   font-weight: 400;
-  line-height: clamp(1.5rem, 2.2535211268vw + 0.9718309859rem, 3rem);
+  line-height: clamp(1.25rem, 1.5023474178vw + 0.8978873239rem, 2.25rem);
   color: hsl(208deg, 12%, 55%);
 }
 .heading--stories {
