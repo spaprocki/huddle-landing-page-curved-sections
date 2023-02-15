@@ -16,7 +16,7 @@
         margin-top: scaleSize(32px, 40px);
         position: relative;
 
-        @include respond(medium-screen) {
+        @include respond(big-screen) {
             flex-direction: row;
             flex-wrap: wrap;
             align-items: flex-start;
@@ -26,8 +26,12 @@
 
     &__input {
         @include respond(medium-screen) {
-            margin-right: 40px;
             margin-bottom: 16px;
+        }
+
+        @include respond(big-screen) {
+            margin-right: 40px;
+            margin-bottom: 0;
         }
     }
 

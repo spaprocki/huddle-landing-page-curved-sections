@@ -9,6 +9,11 @@
                     scaleSize(46px, 103px)
                     scaleSize(24px, 48px, 375px, 768px);
 
+    @include respond(medium-screen) {
+        padding-right: scaleSize(48px, 120px, 768px, 1024px);
+        padding-left: scaleSize(48px, 120px, 768px, 1024px);
+    }
+
       &:before {
         content: '';
         position: absolute;
