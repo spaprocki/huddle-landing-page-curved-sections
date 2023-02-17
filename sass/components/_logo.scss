@@ -1,10 +1,10 @@
 .logo {
-    width: scaleSize(96px, 240px, 375px, 768px);
+    width: scaleSize(6rem, 15rem, 23.4375rem, 48rem);
 
     &--footer {
-            width: auto;
-            height: 100%;
-            margin-right: auto;
-            margin-left: -10px;
+        width: auto;
+        height: 100%;
+        margin-right: auto;
+        margin-left: -0.625rem;
     }
 }

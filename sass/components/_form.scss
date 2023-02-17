@@ -3,17 +3,17 @@
     align-items: flex-start;
 
     @include respond(medium-screen) {
-        width: scaleSize(320px, 344px, 768px, 1440px);
+        width: scaleSize(20rem, 21.5rem, 48rem, 90rem);
     }
 
     @include respond(big-screen) {
-        width: 520px;
+        width: 32.5rem;
     }
-    
+
     &__form-control {
         width: 100%;
         @include flex-column-align-center;
-        margin-top: scaleSize(32px, 40px);
+        margin-top: scaleSize(2rem, 2.5rem);
         position: relative;
 
         @include respond(big-screen) {
@@ -26,21 +26,21 @@
 
     &__input {
         @include respond(medium-screen) {
-            margin-bottom: 16px;
+            margin-bottom: 1rem;
         }
 
         @include respond(big-screen) {
-            margin-right: 40px;
+            margin-right: 2.5rem;
             margin-bottom: 0;
         }
     }
 
     &__button {
-        margin-top: 16px;
+        margin-top: 1rem;
         align-self: flex-end;
 
         @include respond(medium-screen) {
-            margin-top: 0px;
+            margin-top: 0rem;
         }
 
         @include respond(big-screen) {

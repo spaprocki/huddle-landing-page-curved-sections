@@ -1,21 +1,19 @@
 .footer {
     @include flex-column-align-center;
     background-color: $color-very-dark-cyan;
-    margin-top: min(343px, 82.13vw);/* 308px/82.13vw , 343*/;
-    width: min(100%, 1440px);
+    margin-top: min(21.4375rem, 82.13vw); /* 19.25rem/82.13vw , 343*/
+    width: min(100%, 90rem);
     position: relative;
-    padding:    scaleSize(52px, 115px) 
-                    scaleSize(24px, 48px, 375px, 768px)
-                    scaleSize(46px, 103px)
-                    scaleSize(24px, 48px, 375px, 768px);
+    padding: scaleSize(3.25rem, 7.1875rem) scaleSize(1.5rem, 3rem, 23.4375rem, 48rem) scaleSize(2.875rem, 6.4375rem)
+        scaleSize(1.5rem, 3rem, 23.4375rem, 48rem);
 
     @include respond(medium-screen) {
-        padding-right: scaleSize(48px, 120px, 768px, 1024px);
-        padding-left: scaleSize(48px, 120px, 768px, 1024px);
+        padding-right: scaleSize(3rem, 7.5rem, 48rem, 64rem);
+        padding-left: scaleSize(3rem, 7.5rem, 48rem, 64rem);
     }
 
-      &:before {
-        content: '';
+    &:before {
+        content: "";
         position: absolute;
         background-image: url("/images/bg-footer-top-mobile.svg");
         background-size: 100% auto;
@@ -34,27 +32,27 @@
     }
 
     &__inner {
-        width: min(100%, 344px);
+        width: min(100%, 21.5rem);
         @include flex-column-align-center;
         align-items: flex-start;
 
         @include respond(medium-screen) {
-            width: min(100%, 1200px);
+            width: min(100%, 75rem);
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
             flex-wrap: wrap;
-          }
+        }
     }
 
     &__attribution {
         order: 2;
-        margin-top: 104px;
+        margin-top: 6.5rem;
 
         @include respond(medium-screen) {
-            margin-top: 0px;
+            margin-top: 0rem;
             order: 1;
-          }
+        }
     }
 
     &__form {
@@ -62,7 +60,7 @@
 
         @include respond(medium-screen) {
             order: 2;
-          }
+        }
     }
 
     &__social-media-panel {

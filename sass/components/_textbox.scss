@@ -3,9 +3,9 @@
 
     &--hero {
         @include flex-column-align-center;
-        
+
         & .paragraph {
-            margin-top: scaleSize(24px, 26px);
+            margin-top: scaleSize(1.5rem, 1.625rem);
             max-width: 37.5rem;
         }
     }
@@ -19,22 +19,22 @@
     }
 
     &--stories {
-        margin-top: 40px;
+        margin-top: 2.5rem;
 
         @include respond(medium-screen) {
-        margin-top: 0px;
+            margin-top: 0px;
 
             align-items: flex-start;
             text-align: left;
         }
 
         & .paragraph {
-            margin-top: scaleSize(16px, 26px, 375px, 768px);
-            max-width: 520px;
+            margin-top: scaleSize(1rem, 1.625rem, 23.4375rem, 48rem);
+            max-width: 32.5rem;
 
             @include respond(medium-screen) {
-                margin-top: scaleSize(16px, 26px, 768px, 1440px);
-                width: scaleSize(320px, 520px, 768px, 1440px);
+                margin-top: scaleSize(1rem, 1.625rem, 48rem, 90rem);
+                width: scaleSize(20rem, 32.5rem, 48rem, 90rem);
             }
         }
     }
@@ -42,10 +42,10 @@
     &--form {
         align-items: flex-start;
         text-align: left;
-        max-width: 344px;
+        max-width: 21.5rem;
 
         & .paragraph {
-            margin-top: 16px;
+            margin-top: 1rem;
         }
     }
 }

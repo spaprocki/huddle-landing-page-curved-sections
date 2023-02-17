@@ -8,7 +8,7 @@
     @include respond(medium-screen) {
         flex-direction: row;
         justify-content: center;
-        column-gap: scaleSize(88px, 340px, 768px, 1440px);
+        column-gap: scaleSize(5.5rem, 21.25rem, 48rem, 90rem);
     }
 
     &__item {
@@ -17,12 +17,11 @@
 
     &__icon {
         align-self: flex-start;
-        width: scaleSize(36px, 56px, 375px, 768px);
+        width: scaleSize(2.25rem, 3.5rem, 23.4375rem, 48rem);
         margin-bottom: -10px;
 
         @include respond(medium-screen) {
-            margin-bottom: -16px;
-
+            margin-bottom: -1rem;
         }
     }
 }

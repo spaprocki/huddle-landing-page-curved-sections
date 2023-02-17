@@ -2,33 +2,32 @@
     width: 100%;
     @include flex-column-align-center;
     position: relative;
-    padding-left: scaleSize(36px, 72px, 375px, 768px);
-    padding-right: scaleSize(36px, 72px, 375px, 768px);
+    padding-left: scaleSize(2.25rem, 4.5rem, 23.4375rem, 48rem);
+    padding-right: scaleSize(2.25rem, 4.5rem, 23.4375rem, 48rem);
 
     @include respond(medium-screen) {
         flex-direction: row;
         justify-content: space-between;
-        padding-left: scaleSize(36px, 120px, 768px, 1440px);
-        padding-right: scaleSize(36px, 120px, 768px, 1440px);
+        padding-left: scaleSize(2.25rem, 7.5rem, 48rem, 90rem);
+        padding-right: scaleSize(2.25rem, 7.5rem, 48rem, 90rem);
     }
 
     &--white {
-        margin-top: min(51vw, 339px);
+        margin-top: min(51vw, 21.1875rem);
     }
-    
 
     &--blue-1 {
         background-color: $color-very-pale-blue;
-        padding-top: 84px;
-        padding-bottom: 53px;
+        padding-top: 5.25rem;
+        padding-bottom: 3.3125rem;
 
         @include respond(medium-screen) {
-            padding-top: 61px;
-            padding-bottom: 40px;
+            padding-top: 3.8125rem;
+            padding-bottom: 2.5rem;
         }
 
         &:before {
-            content: '';
+            content: "";
             position: absolute;
             background-image: url("/images/bg-section-top-mobile-1.svg");
             background-size: 100% auto;
@@ -47,7 +46,7 @@
         }
 
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             background-image: url("/images/bg-section-bottom-mobile-1.svg");
             background-size: 100% auto;
@@ -67,18 +66,18 @@
     }
 
     &--blue-2 {
-        margin-top: min(59vw, 276px);
+        margin-top: min(59vw, 17.25rem);
         background-color: $color-very-pale-blue;
-        padding-top: 16px;
-        padding-bottom: 113px;
+        padding-top: 1rem;
+        padding-bottom: 7.0625rem;
 
         @include respond(medium-screen) {
-            padding-top: 34px;
-            padding-bottom: 33px;
+            padding-top: 2.125rem;
+            padding-bottom: 2.0625rem;
         }
 
         &:before {
-            content: '';
+            content: "";
             position: absolute;
             background-image: url("/images/bg-section-top-mobile-2.svg");
             background-size: 100% auto;
@@ -97,7 +96,7 @@
         }
 
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             background-image: url("/images/bg-section-bottom-mobile-2.svg");
             background-size: 100% auto;

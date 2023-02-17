@@ -2,38 +2,37 @@
     @include flex-column-align-center;
     align-items: flex-start;
     text-align: left;
-    max-width: 344px;
+    max-width: 21.5rem;
 
     @include respond(medium-screen) {
         flex: 1;
     }
 
-
     &__paragraph {
-        margin-top: 16px;
+        margin-top: 1rem;
     }
 
     &__contact-details {
-        margin-top: scaleSize(40px, 24px);
+        margin-top: scaleSize(2.5rem, 1.5rem);
     }
 
     &__contact-detail {
-        font-size: 0.875rem;
-        line-height: 1.5rem;
+        font-size: 14px;
+        line-height: 24px;
         display: flex;
 
         & img {
-            margin: auto 19px auto 0;
-            width: 18px;
-            height: 18px;
+            margin: auto 1.1875rem auto 0;
+            width: 1.125rem;
+            height: 1.125rem;
         }
 
         &--email {
-            margin-top: 16px;
+            margin-top: 1rem;
 
             & img {
-                width: 20px;
-                height: 16px;
+                width: 1.25rem;
+                height: 1rem;
             }
         }
     }

@@ -1,7 +1,7 @@
 .btn {
-    &,
-    &:link,
-    &:visited {
+  &,
+  &:link,
+  &:visited {
     text-decoration: none;
     display: inline-block;
     transition: transform 0.2s;
@@ -14,30 +14,32 @@
     transform: scale(1.02);
   }
 
-  &:focus,:focus-visible {
-    outline-width: 3px;
-    outline-style:  dashed;
-    outline-offset: 5px;}
+  &:focus,
+  :focus-visible {
+    outline-width: 0.1875rem;
+    outline-style: dashed;
+    outline-offset: 0.3125rem;
+  }
 
-    &:focus:not(:focus-visible) {
-      outline: none;
-    }
-  
-  
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
   &--primary {
     background-color: $color-pink;
-    font-size: scaleSize(12px, 20px);
-    line-height: scaleSize(18px, 30px);
+    font-size: scaleSize(0.75rem, 1.25rem);
+    line-height: scaleSize(1.125rem, 1.875rem);
     color: $color-white;
-    padding: scaleSize(11px, 25px) scaleSize(40px, 100px);
+    padding: scaleSize(0.6875rem, 1.5625rem) scaleSize(2.5rem, 6.25rem);
     border: none;
-    border-radius: scaleSize(20px, 40px);
-    
+    border-radius: scaleSize(1.25rem, 2.5rem);
+
     &:hover {
       background: $color-light-pink;
     }
 
-    &:focus,:focus-visible {
+    &:focus,
+    :focus-visible {
       outline-color: $color-pink;
     }
   }
@@ -46,27 +48,27 @@
     background: transparent;
     color: $color-pink;
     font-weight: $default-font-weight;
-    font-size: scaleSize(10px, 13px);
-    line-height: scaleSize(15px, 22px);
-    padding: scaleSize(5px, 9px) scaleSize(18px, 30px);
-    border: 1px solid $color-pink;
-    border-radius: scaleSize(12px, 20px);
-
+    font-size: scaleSize(0.625rem, 0.8125rem);
+    line-height: scaleSize(0.9375rem, 1.375rem);
+    padding: scaleSize(0.3125rem, 0.5625rem) scaleSize(1.125rem, 1.875rem);
+    border: 0.0625rem solid $color-pink;
+    border-radius: scaleSize(0.75rem, 1.25rem);
 
     &:hover {
       border-color: $color-light-pink;
       color: $color-light-pink;
     }
 
-    &:focus,:focus-visible {
+    &:focus,
+    :focus-visible {
       outline-color: $color-light-pink;
     }
   }
 
   &--submit {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 12px 41px;
-    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0.75rem 2.5625rem;
+    border-radius: 0.3125rem;
   }
 }

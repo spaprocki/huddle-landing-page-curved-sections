@@ -1,15 +1,15 @@
 .header {
-    @include flex-column-align-center;
-    width: 100%;
-    padding: 0 scaleSize(1.5rem, 4.5rem);
-    text-align: center;
+  @include flex-column-align-center;
+  width: 100%;
+  padding: 0 scaleSize(1.5rem, 4.5rem);
+  text-align: center;
 
-    &__inner {
-      width: 100%;
-      max-width: 81rem;
-      margin-top: scaleSize(1.5rem, 4.5rem);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  &__inner {
+    width: 100%;
+    max-width: 81rem;
+    margin-top: scaleSize(1.5rem, 4.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+}

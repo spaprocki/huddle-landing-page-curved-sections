@@ -3,49 +3,46 @@
     // background-color: black;
     z-index: 1;
 
-    
     & > * {
         width: 100%;
         @include flex-column-align-center;
     }
 }
 
-.hero { 
-        padding: 0 scaleSize(36px, 72px, 375px, 768px);
-    
-        &__textbox {
-            margin-top: scaleSize(112px, 225px);
-        }
+.hero {
+    padding: 0 scaleSize(2.25rem, 4.5rem, 23.4375rem, 48rem);
 
-        &__btn {
-            margin-top: 3rem;
-        }
+    &__textbox {
+        margin-top: scaleSize(7rem, 14.0625rem);
+    }
 
-        &__image {
-            margin-top: scaleSize(104px, 120px);
-        }
+    &__btn {
+        margin-top: 48px;
+    }
 
-        &__stats {
-            margin-top: 120px;
-        }
-    }   
+    &__image {
+        margin-top: scaleSize(6.5rem, 7.5rem);
+    }
+
+    &__stats {
+        margin-top: 7.5rem;
+    }
+}
 
 .stories {
-    margin-top: min(35vw, 305px);
+    margin-top: min(35vw, 19.0625rem);
 
-        &__list {
-            width: 100%;
-            max-width: 1440px;
-        }
+    &__list {
+        width: 100%;
+        max-width: 90rem;
     }
+}
 
 .cta {
-        margin-top: min(45vw, 308px);
-        padding: 0 scaleSize(36px, 72px, 375px, 768px);
+    margin-top: min(45vw, 19.25rem);
+    padding: 0 scaleSize(2.25rem, 4.5rem, 23.4375rem, 48rem);
 
-        &__btn {
-            margin-top: scaleSize(40px, 42px);
-        }
+    &__btn {
+        margin-top: scaleSize(2.5rem, 2.625rem);
     }
-
-
+}
